@@ -1,43 +1,36 @@
-# 🌿 Khanware (2024 - 2026)
+# 🌿 Khanware Revival (Fork)
 
-> 🪦 I don’t have time to maintain this anymore. Consider using [Khanto](https://khan.cupiditys.lol/).  
-> I’m not sure how a non-Brazilian student would use that tool, but in that case, I would probably reach out to the developer.
+> Este é um fork do [Khanware original](https://github.com/Niximkk/Khanware) criado por [Nix](https://github.com/Niximkk). O projeto original foi descontinuado, e estou tentando revivê-lo com novas ideias e adaptações para o site atual da Khan Academy.
 
-> If you have the required knowledge, feel free to fix the code yourself (PRs are welcome here).
+## 🎯 Objetivo
 
-### The most advanced Khan Academy cheat.
+Transformar o Khanware em uma **extensão de navegador** funcional, contornando as limitações atuais (CSP, mudanças no DOM, APIs) e adicionando melhorias.
 
-🙂 Stable:
-```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/Khanware.js").then(t=>t.text()).then(eval);
-```
-🔧 Dev (beta):
-```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@dev/Khanware.js").then(t=>t.text()).then(eval);
-```
-🪶 Minimal (beta):
-```js
-javascript:fetch("https://cdn.jsdelivr.net/gh/niximkk/khanware@master/khanwareMinimal.js").then(t=>t.text()).then(eval);
-```
+## 🚀 Como usar (extensão)
 
-By creating this repository, I grant permission for everyone to use my code. However, since it is licensed under the GPL, any modifications or distributions must also be open source.
+1. Faça o download ou clone este repositório.
+2. Abra o Chrome e vá para `chrome://extensions/`.
+3. Ative o "Modo do desenvolvedor".
+4. Clique em "Carregar sem compactação" e selecione a pasta `extension` (ou a raiz do projeto, dependendo da estrutura).
+5. Acesse a Khan Academy e veja o menu "Khanware" aparecer.
 
-Thank you all for your support over the last few months.
+## 🛠️ Desenvolvimento
 
-Take a look at other projects like [Khan Destroyer](https://github.com/ilytobias/Khan-Destroyer). Although it's quite broken, my code might help fix it properly!
+- A estrutura atual está sendo refatorada para usar módulos ES6 e evitar `eval()`.
+- Os seletores estão sendo atualizados conforme as mudanças do site.
+- Pretendo adicionar:
+  - [ ] Suporte a novos exercícios
+  - [ ] Interface mais moderna
+  - [ ] Opção de ativar/desativar funcionalidades
+  - [ ] Traduções atualizadas
 
-### As gaben once said:
-> _"After 9 years in development hopefully it will be worth the wait, thanks and have fun."_
+## 📜 Licença e Créditos
 
---- 
-Copyright (C) 2024 Nix
+Este projeto é mantido sob a **GNU General Public License v3.0**.  
+Todo o código original é de autoria de **Nix** (veja o [repositório original](https://github.com/Niximkk/Khanware)).  
+Modificações e adaptações por **[NixScripts]**.
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+---
 
-<p align="center">
-  <a href="https://emoji.gg/emoji/5349-hellokittybyebye">
-    <img src="https://cdn3.emoji.gg/emojis/5349-hellokittybyebye.png" width="128px" height="128px" alt="HelloKittyByeBye">
-  </a>
-</p>
+**Agradecimentos especiais ao Nix pelo trabalho incrível!**  
+Se você gosta deste projeto, considere contribuir ou dar uma estrela ⭐
